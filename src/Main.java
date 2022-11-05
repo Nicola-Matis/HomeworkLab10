@@ -6,16 +6,17 @@ public class Main {
         printMyName();
         //2.
         System.out.println("Exercise number 2:");
-        System.out.println("Rezultatul adunarii este: " + sum(5, 5));
-        System.out.println("Rezultatul scaderii este: " + subtraction(7, 3));
-        System.out.println("Rezultatul impartirii este: " + division(100, 40));
-        System.out.println("Rezultatul inmultirii este: " + multiplication(49, 3));
+        System.out.println("Rezultatul adunarii este: " +sum(5, 5));
+        System.out.println("Rezultatul scaderii este: " +subtraction(7, 3));
+        System.out.println("Rezultatul impartirii este: " +division(100, 40));
+        System.out.println("Rezultatul inmultirii este: " +multiplication(49, 3));
         //3.
         System.out.println("Exercise number 3:");
         String result = JavaLogo();
         System.out.println(result);
         //4.
-
+        System.out.println("Exercise number 4:");
+        System.out.println("Media celor 3 numere este: " +AverageOfNumbers(5,40,359));
         //5.
         System.out.println("Exercise number 5:");
         String Frankenstein = Frank();
@@ -25,13 +26,15 @@ public class Main {
         System.out.println("Rezultatul impartirii este: " + result6(5, 2));
         //7.
         System.out.println("Exercise number 7:");
-        double celsius = temperature (150);
+        double celsius = temperature(150);
         System.out.println("Temperatura convertita in celsius este de: " + celsius + "\n");
         //8.
         System.out.println("Exercise number 8:");
         float metri = distance(100);
-        System.out.println("Distanta convertita in metri este de: " + metri +"\n");
+        System.out.println("Distanta convertita in metri este de: " + metri + "\n");
         //9.
+        System.out.println("Exercise number 9:");
+        System.out.println("-");
     }
 
     //1.
@@ -73,6 +76,11 @@ public class Main {
     }
 
     //4.
+    public static int AverageOfNumbers(int a1, int b1, int c1) {
+        int average = (a1 + b1 + c1) / 3;
+        return average;
+}
+
 
     //5.
     public static String Frank () {
@@ -91,23 +99,17 @@ public class Main {
     }
 
     //7.
-    public static double temperature (double Fahrenheit){
+    public static double temperature(double Fahrenheit){
 
         double celsius = ((Fahrenheit-32)*5d/9);
         return celsius;
     }
 
     //8.
-    public static float distance (float inch) {
+    public static float distance(float inch) {
         float metri = (inch * 0.0254F);
         return metri;
     }
 
     //9.
-}
-
-
-
-
-
-
+    }
